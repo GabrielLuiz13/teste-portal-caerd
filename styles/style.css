@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#menu-bar {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding-top: 1.3rem;
+}
+
+#main-bar {
+    height: 11vh;
+    background-color: #005c8a;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5rem;
+
+}
+
+#main-bar a {
+    display: flex;
+}
+
+
+#main-bar img #caerd-logo {
+    height: 60px;
+    width: 100px;
+}
+
+.slide-images {
+    margin: 0 auto;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+
+.slide-btn {
+    background-color: #737171;
+    border: 10px solid #737171;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.slide-btn:hover {
+    filter: brightness(85%);
+}
+
+.slide-btn-icon {
+    width: 6%;
+    color: black;
+}
+
+.bg-primary {
+    background-color: #005c8a;
+}
+
+.menu-itens button {
+    text-align: left;
+}
+
+.menu-btn {
+    background-color: #005c8a;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 10px;
+    transition: 0.7s;
+    font-size: 1.2rem;
+}
+
+.menu-btn:hover {
+    background-color: white;
+    color: #005c8a;
+}
+
+.dropdown-style li a:hover {
+    background: #005c8a;
+    color: white;
+}
+
+.caerd-png {
+    transition: 0.8s;
+}
+
+.caerd-png:hover {
+    transform: scale(1.1);
+}
+
+.btn-close {
+    color: white;
+    /* Define a cor do ícone para branco */
+}
+
+.offcanvas button.btn-close::before {
+    color: white !important;
+    /* Define a cor do ícone para branco */
+}
+
+.logos-hover {
+    transition: 0.8s;
+}
+
+.logos-hover:hover {
+    transform: scale(1.1);
+}
+
+.social-midias {
+    display: flex;
+    justify-content: center;
+}
+
+.social-midias a {
+    font-size: 2.2rem;
+    color: white;
+    text-decoration: none;
+    margin: 0px 20px 20px 0px;
+    transition: 0.8s;
+}
+
+.social-midias a:hover {
+    transform: scale(1.1);
+}
+
+.container-line {
+    margin: 20px 0 20px 0;
+    align-items: center;
+}
+
+.line {
+    border: solid .1px #727171;
+    border-radius: 10px;
+    height: 0;
+    padding: 0;
+}
+
+.col {
+    flex: 1 0 0%;
+}
+
+
+
+.card-size-portal {
+    position: relative;
+    margin-top: 5%;
+    height: 30%;
+    background-color: #005c8a;
+    border-radius: 20px;
+}
+
+.font-logo-portais {
+    font-size: 25px;
+
+}
+
+.font-card-size {
+    position: center;
+    margin-top: 10px;
+    color: black;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.text-card {
+    text-decoration: none;
+}
+
+.text-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+.card-portal {
+    height: 100%;
+    width: 100%;
+    background-color: #005c8a;
+    border-radius: 20px;
+    transition: 0.8s;
+}
+
+.card-portal:hover {
+    box-shadow: 0 0 20px #2b2b2ba5;
+    transform: scale(1.01);
+}
+
+.card-link {
+    text-decoration: none;
+}
+
+.card-wallpaper {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://rondonia.ro.gov.br/wp-content/uploads/2023/08/Caerd_17.08.23-Foto_Daiane-Mendonca-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+.card-text {
+    color: white;
+}
+
+.card h5 {
+    color: white;
+}
+
+@media screen and (min-width:576px) {
+    .carousel-card {
+        display: flex;
+    }
+
+    .carousel-item {
+        display: block;
+        margin-right: 0;
+        flex: 0 0 calc(100%/3);
+    }
+}
+
+.carousel-card {
+    padding: 1em;
+}
+
+.card {
+    margin: 0.5e;
+}
+
+.carousel-card-next,
+.carousel-card-prev {
+    background: black;
+}
+
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-slide {
+    width: 15rem; /* Largura de cada slide */
+    height: 15rem; /* Altura de cada slide */
+    margin: 0 10px; /* Espaço entre os slides */
+}
+
+.swiper-container {
+    position: relative; /* Garante que os botões de navegação fiquem dentro do contêiner do Swiper */
+    overflow: hidden;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute; /* Posicionamento absoluto em relação ao contêiner pai (swiper-container) */
+    top: 50%; /* Alinha os botões verticalmente no centro */
+    transform: translateY(-50%); /* Ajusta para centralizar verticalmente */
+    z-index: 10; /* Define uma camada superior para os botões */
+    cursor: pointer; /* Mostra o cursor como ponteiro ao passar por cima */
+}
+
+.swiper-button-next {
+    right: 10px; /* Ajusta a distância da direita */
+}
+
+.swiper-button-prev {
+    left: 10px; /* Ajusta a distância da esquerda */
+}
+
+.swiper-pagination {
+    position: relative; /* Mudança para relativa */
+    text-align: center; /* Centraliza horizontalmente os indicadores */
+    margin-top: 10px; /* Espaço acima da paginação */
+    left: 50%; /* Ajusta a posição à esquerda 50% da largura do proprio */
+}
